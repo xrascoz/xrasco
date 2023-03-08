@@ -1,0 +1,175 @@
+.whats {
+    bottom: 20px;
+    left: 20px;
+}
+
+body {
+    height: 100vh;
+
+}
+
+.bak img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -20;
+}
+
+.ul-list ul a.active::after {
+    width: 50px;
+}
+
+.whats {
+    bottom: 20px;
+    left: 20px;
+}
+
+
+
+
+.wats-messnger {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+@media (max-width:750px) {
+
+    .wats-messnger {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    header {
+        display: none !important;
+    }
+
+}
+
+
+@media (min-width:750px) {
+
+    .secedn-header {
+        display: none !important;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.wats-messnger .connew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    user-select: none;
+    position: relative;
+}
+
+
+.wats-messnger .connew img {
+    width: 100px !important;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.wats-messnger .connew:hover img {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.messnger {
+    background-color: #006effb3;
+}
+
+.wats {
+    background-color: #00b950b3;
+}
+
+.facebook {
+    background-color: #1e4ba0b3;
+}
+
+.instagram {
+    background-color: #e52765b3;
+}
+
+.gethub {
+    background-color: #141414b3;
+}
+
+.telegram {
+    background-color: #0082beb3;
+}
+
+
+
+.secedn-header {
+    position: absolute;
+    z-index: 55;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    background-color: #ffffff49;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.secedn-header .logo {
+    width: 70px;
+    margin-top: 47px;
+    transition: .5s;
+}
+
+.secedn-header:hover .logo {
+    transform: scale(1.2) rotate(5deg);
+
+
+}
+
+
+
+
+
+
+
+.onlode {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #1409314d;
+    z-index: 55555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.onlode img {
+    width: 200px;
+
+}
+
+.onlode.none {
+    opacity: 0;
+
+    display: none;
+}

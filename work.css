@@ -1,0 +1,149 @@
+.ul-list ul a.active::after {
+
+    width: 90px;
+
+
+}
+
+.continer {
+    margin-top: 100px;
+}
+
+.design-th::after {
+    display: none;
+}
+
+
+.design-log::after {
+    display: none;
+
+}
+
+
+.active-img-pop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    z-index: 555;
+    background: #0b051a46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.active-img-pop.active {
+    transform: translateX(0);
+
+}
+
+.div-img {
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media (max-width:750px) {
+    .div-img {
+        width: 90% !important;
+    }
+}
+
+.div-img img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.05);
+}
+
+.closex {
+    position: absolute;
+    z-index: 55;
+    right: 0px;
+    top: 0px;
+    font-size: 128px;
+    font-weight: 100;
+    background-color: #251d4b70;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: -20px 20px 35px 0px #00000085;
+    backdrop-filter: blur(8px);
+
+}
+
+.closex:hover {
+    background-color: #3d346e70;
+}
+
+.eay {
+
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0 5px;
+    bottom: 20px;
+    background: linear-gradient(180deg, #6231df, transparent);
+    height: 70px;
+    align-items: flex-start;
+    border-radius: 0;
+    bottom: 0;
+}
+
+.img-contnt-js .img-contnt {
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.onlode {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #1409314d;
+    z-index: 55555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.onlode img {
+    width: 200px;
+
+}
+
+.onlode.none {
+    opacity: 0;
+
+    display: none;
+}

@@ -1,0 +1,132 @@
+body {
+    height: 100vh;
+
+}
+
+.bak img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -20;
+}
+
+.ul-list ul a.active::after {
+    width: 50px;
+}
+
+.contant-about {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 50%;
+    width: 400px;
+
+}
+
+
+
+@media (max-width:500px) {
+
+
+
+    .contant-about {
+        width: 90% !important;
+    }
+
+    .contant-about h1 {
+        font-size: 70px !important;
+    }
+
+
+}
+
+
+
+
+
+.contant-about h1 {
+
+    font-size: 100px;
+}
+
+.contant-about p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.continer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(390px) scale(0.8);
+}
+
+.lor {
+    margin-top: 30px;
+}
+
+.about-what-i-can-to-do {
+    font-weight: 400;
+}
+
+.whats {
+    bottom: 20px;
+    left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------- */
+
+
+
+.onlode {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #1409314d;
+    z-index: 55555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.onlode img {
+    width: 200px;
+
+}
+
+.onlode.none {
+    opacity: 0;
+
+    display: none;
+}
+
+/* ----------- */
+
+
+
+@media (max-width:960px) {
+
+    .con2 {
+        display: none;
+    }
+
+    .con1 {
+        display: block;
+    }
+
+}
+
+
+
